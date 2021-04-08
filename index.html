@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Personal - Silvana Gisel Cuadra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;800&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.10.1/devicon.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!------------ HEADER ----------->
+    <header>
+        <!------------ NAVEGADOR SUPERIOR ----------->
+        <div class="container-nav fixed-top">
+            <nav class="header-nav">
+                <ul class="menu-nav">
+                    <li class="item-nav">
+                        <a href="#about-me" class="link-nav">SOBRE MI</a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="#ability" class="link-nav">HABILIDADES</a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="#proyects" class="link-nav">PROYECTOS</a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="#contact" class="link-nav button-contact">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+            <!------------ NAVEGADOR RESPONSIVE ----------->
+            <div class="responsive-header">
+                <div id="nav-responsive" class="responsive-nav hidden">
+                    <button id="close" class="close"><i class="fas fa-times"></i></button>
+                    <nav class="">
+                        <ul class="responsive-menu-nav"> 
+                            <li class="item-nav">
+                                <a href="#about-me" class="link-nav expand-nav">SOBRE MI</a>
+                            </li>
+                            <li class="item-nav">
+                                <a href="#ability" class="link-nav expand-nav">HABILIDADES</a>
+                            </li>
+                            <li class="item-nav">
+                                <a href="#proyects" class="link-nav expand-nav">PROYECTOS</a>
+                            </li>
+                            <li class="item-nav">
+                                <a href="#contact" class="link-nav expand-nav eliminated">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <button id="expand" class="expand"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!------------ SECCION SOBRE MI ----------->
+    <section class="about-me" id="about-me">
+        <div class="container-presentation">
+            <div class="container info">
+                <p><span class="welcome">¡Bienvenidos!</span> Soy,</p>
+                <h1>Silvana Gisel Cuadra</h1>
+                <div class="description">
+                    <p><span class="grade">Ingeniera Ambiental</span> <i class="fab fa-envira"></i></p>
+                    <p>Actualmente estudiando para convertirme en una desarrolladora Front-End</p>
+                </div>
+            </div>
+            <div class="container img">
+                <img class="programmer" src="img/Female Developer.svg" alt="Mujer Programando">
+            </div>
+        </div>
+    </section>
+
+    <!------------ SECCION HABILIDADES ----------->
+    <section class="ability" id="ability">
+        <div class="container-main ability">
+            <h2>Mis Conocimientos</h2>
+            <p>Estos son los lenguajes y tecnologías que manejo y de los que me interesa seguir aprendiendo.
+            </p>
+            <div class="container-box">
+                <div class="box">
+                    <p>HTML 5</p>
+                    <i  class="devicon-html5-plain colored icon"></i>
+                </div>
+                <div class="box">
+                    <p>CSS</p>
+                    <i class="devicon-css3-plain colored icon"></i>
+                </div>
+                <div class="box">
+                    <p>SASS</p>
+                    <i class="devicon-sass-original colored icon"></i>
+                </div>
+                <div class="box">
+                    <p>JAVASCRIPT</p>
+                    <i class="devicon-javascript-plain colored icon"></i>
+                </div>
+                <div class="box">
+                    <p>JQUERY</p>
+                    <i class="devicon-jquery-plain-wordmark colored icon"></i>
+                </div>
+                <div class="box">
+                    <p>MYSQL</p>
+                    <i class="devicon-mysql-plain-wordmark colored icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------ SECCION PROYECTOS ----------->
+    <section class="proyects" id="proyects">
+        <div class="container-main proyect">
+            <h2>Mis Proyectos</h2>
+            <p>En esta sección podrás encontrar todos los proyectos que he realizado.</p>
+            <div class="filters">
+                <button type="button" category="Todos" class="filter all">Todos</button>
+
+                <button type="button" category="HTML/CSS" class="filter selected">HTML/CSS</button>
+
+                <button type="button" category="JavaScript" class="filter selected">JavaScript</button>
+
+                <button type="button" category="React" class="filter selected">React</button>
+            </div>
+        </div>
+        <div class="work">
+            <a category="HTML/CSS" href="" target="_blank" rel="noopener noreferrer" class="one-work">
+                <div class="boxes">
+                    <img src="img/Portafolio.png" alt="Portafolio">
+                    <p>PORFOLIO</p>
+                </div>            
+            </a>
+            <!-- <a category="" href="" target="_blank" rel="noopener noreferrer" class="one-work">
+                <div class="boxes">
+                    <img src="" alt="">
+                </div>            
+            </a> -->
+        </div>
+    </section>
+
+    <!------------ SECCION CONTACTO ----------->
+    <section class="contact" id="contact">
+        <div class="container-main contact-me">
+            <div class="column social-media">
+                <h2>Contactame</h2>
+                <p>Si deseas contartarte conmigo, por favor, escribime a través de alguno de estos medios.</p>
+                <div class="contact-social">
+                    <ul class="contact-social-link">
+                        <li class="contact-social-item">
+                            <a href="">
+                                <i class="fas fa-envelope"></i>
+                                silvanagcuadra@gmail.com</a>
+                        </li>
+                        <li class="contact-social-item">
+                            <a href="">
+                                <i class="fab fa-linkedin"></i>
+                                https://www.linkedin.com/in/silvanacuadra/</a>
+                        </li>
+                        <li class="contact-social-item">
+                            <a href="">
+                                <i class="fab fa-github"></i>
+                                wwwwwww</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column contact-form">
+                <h2>Escribeme</h2>
+                <form action="" method="post" class="form">
+                    <div class="name-surname">
+                        <div class="input-form">
+                            <label for="name">Nombre *</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="input-form">
+                            <label for="surname">Apellido *</label>
+                            <input type="text" name="surname" id="surname" required>
+                        </div>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="message">Mensaje *</label>
+                        <textarea name="message" id="message" cols="20" rows="10" required>Escriba un mensaje aquí</textarea>
+                    </div>
+
+                    <button type="submit" class="submit selected">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!------------ FOOTER ----------->
+    <footer>
+        <div class="container-main footer">
+            <div class="container-footer-nav">
+                <nav class="footer-nav">
+                    <ul class="footer-menu-nav">
+                        <li class="footer-item-nav">
+                            <a href="#about-me" class="footer-link-nav">SOBRE MI</a>
+                        </li>
+                        <li class="footer-item-nav">
+                            <a href="#ability" class="footer-link-nav">HABILIDADES</a>
+                        </li>
+                        <li class="footer-item-nav">
+                            <a href="#proyects" class="footer-link-nav">PROYECTOS</a>
+                        </li>
+                        <li class="footer-item-nav">
+                            <a href="#contact" class="footer-link-nav">CONTACTO</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-social">
+                <ul class="footer-social-link">
+                    <li class="footer-social-item">
+                        <a class="footer-icon" href="mailto:silvanagcuadra@gmail.com"> 
+                            <i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="footer-icon" href="https://www.linkedin.com/in/silvanacuadra/">
+                            <i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="footer-icon" href="">
+                            <i class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="signature">
+                <i class="far fa-copyright"></i>
+                <p>Todos los derechos reservados <br>
+                    Diseñado por Silvana Cuadra</p>
+            </div>
+            <a class="credits" href="https://www.vecteezy.com/free-vector/website">Website Vectors by Vecteezy</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
