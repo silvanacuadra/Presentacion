@@ -126,11 +126,7 @@ a {
 
 }
 
-.container .description i{
-    color: #084713;
-}
-
-.container .description span.grade {
+.container .description p.grade {
     font-weight: bold;
 }
 
