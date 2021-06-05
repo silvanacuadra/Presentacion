@@ -9,7 +9,7 @@ Podes ver el proyecto ingresando al siguiente link:
 
 - HTML5
 - CSS
-- jQuery  
+- JavaScript: para funcionalidades básicas  
 
 ## Funcionalidades
 
