@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.10.1/devicon.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
 </head>
 
 <body>
@@ -102,10 +102,6 @@
                     <i class="devicon-javascript-plain colored icon"></i>
                 </div>
                 <div class="box">
-                    <p>JQUERY</p>
-                    <i class="devicon-jquery-plain colored icon"></i>
-                </div>
-                <div class="box">
                     <p>MYSQL</p>
                     <i class="devicon-mysql-plain colored icon"></i>
                 </div>
@@ -127,25 +123,26 @@
             <h2>Mis Proyectos</h2>
             <p>En esta sección podrás encontrar todos los proyectos que he realizado.</p>
             <div class="filters">
-                <button type="button" category="Todos" class="filter all">Todos</button>
+                <button type="button" data-categoria="Todos" class="filter all">Todos</button>
 
-                <button type="button" category="HTML/CSS" class="filter selected">HTML/CSS</button>
+                <button type="button" data-categoria="HTML/CSS" class="filter selected">HTML/CSS</button>
 
-                <button type="button" category="JavaScript" class="filter selected">JavaScript</button>
+                <button type="button" data-categoria="JavaScript" class="filter selected">JavaScript</button>
 
-                <button type="button" category="React" class="filter selected">React</button>
+                <!-- <button type="button" data-categoria="React" class="filter selected">React</button> -->
             </div>
         </div>
         <div class="work">
-            <a category="HTML/CSS" href="" target="_blank" rel="noopener noreferrer" class="one-work">
+            <a data-categoria="HTML/CSS" href="" target="_blank" rel="noopener noreferrer" class="one-work">
                 <div class="boxes">
                     <img src="img/Portafolio.png" alt="Portafolio">
                     <p>PORFOLIO</p>
                 </div>            
             </a>
-            <!-- <a category="" href="" target="_blank" rel="noopener noreferrer" class="one-work">
+            <!-- <a data-categoria="" href="" target="_blank" rel="noopener noreferrer" class="one-work">
                 <div class="boxes">
                     <img src="" alt="">
+                    <p>JS</p>
                 </div>            
             </a> -->
         </div>
@@ -253,7 +250,8 @@
             <a class="credits" href="https://www.vecteezy.com/free-vector/website">Website Vectors by Vecteezy</a>
         </div>
     </footer>
-
+    
+    <script src="main.js"></script>
 </body>
 
 </html>

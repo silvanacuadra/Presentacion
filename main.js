@@ -1,40 +1,36 @@
-$(document).ready(function(){
+const expand = document.querySelector("#expand");
+const close = document.querySelector("#close");
+const nav = document.querySelector("#nav-responsive");
+const lista = document.querySelectorAll(".expand-nav");
+const filtros = document.querySelectorAll(".filter");
+const work = document.querySelectorAll(".one-work");
 
-    // MENU DESPLEGABLE
+// MENU DESPLEGABLE
 
-    const expand = $("#expand");
-    const close = $("#close");
-    const nav = $("#nav-responsive");
-    const lista = $(".expand-nav")
+expand.onclick = () => nav.classList.toggle("hidden");
 
-    expand.on("click", () => {
-        nav.toggleClass("hidden");
-    });
-    
-    close.on("click", () => {
-        nav.toggleClass("hidden");
-    });
+close.onclick = () => nav.classList.toggle("hidden");
 
-    lista.on("click", () => {
-        nav.toggleClass("hidden");
-    });
+for (let elemento of lista) {
+    elemento.onclick = () => nav.classList.toggle("hidden");
+}
 
-    // FILTRO DE ELEMENTOS
+// FILTRO DE PROYECTOS
 
-    // Mostrar los trabajos según categoría seleccionada
-   
-    $(".filter").on("click", function() {
-        let filterSelected = $(this).attr("category");
-
-        $(".one-work").hide();
-        $(".one-work[category='"+filterSelected+"']").show();
-    });
-
-     // Mostrar todos los trabajos al presionar "TODOS"
-
-     $(".filter[category='Todos']").on("click", () => {
-        $(".one-work").show();
-    });   
-});
+for (let boton of filtros) {
+    boton.onclick = () => {
+        for (let proyecto of work) {
+            if (boton.dataset.categoria === proyecto.dataset.categoria) {
+                proyecto.classList.remove("hidden");
+            }
+            else if (boton.dataset.categoria === "Todos") {
+                proyecto.classList.remove("hidden");
+            }
+            else {
+                proyecto.classList.add("hidden");
+            }
+        }
+    }
+}
 
 

@@ -172,7 +172,7 @@ a {
 }
 
 .container-box {
-    max-width: 800px;
+    max-width: 1000px;
     width: 80%;
     margin-top: 30px;
     padding: 10px;
@@ -187,7 +187,7 @@ a {
     border-radius: 50px;
     width: 25%;
     min-height: 180px;
-    min-width: 200px;
+    max-width: 200px; 
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -272,7 +272,6 @@ a {
 
 .one-work {
     text-decoration: none;
-    display: block;
     width: 40%;
     padding: 10px;
     border: 1px solid rgba(134, 134, 134, 0.5);
@@ -588,6 +587,10 @@ textarea:focus {
         text-align: center;
     }
 
+    .container-box .box {
+        width: 50%;
+    }
+
     .contact-me {
         flex-direction: column;
         justify-content: center;
@@ -609,19 +612,6 @@ textarea:focus {
         text-align: center;
     }
  
-}
-
-@media (max-width: 750px) {
-
-    .container-box .box {
-        width: 40%;  
-        max-width: 100px;   
-        min-height: 150px;
-    }
-
-    .container-box .icon {
-        font-size: 3em;
-    }
 }
 
 @media (max-width: 650px) {
